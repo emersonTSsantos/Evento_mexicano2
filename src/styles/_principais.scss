@@ -1,0 +1,121 @@
+@use 'variaveis';
+
+.principais {
+    padding: 80px 0;
+
+    &--churros {
+        background-image: linear-gradient(variaveis.$gradient1, variaveis.$gradient1);
+    }
+
+    &--poblano {
+        background-image: linear-gradient(variaveis.$gradient1, variaveis.$gradient2);
+    }
+
+    &--guacamole {
+        background-image: linear-gradient(variaveis.$gradient2, variaveis.$gradient3);
+    }
+
+    &--quesadilla {
+        background-image: linear-gradient(variaveis.$gradient3, variaveis.$gradient4);
+    }
+
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+            gap: 40px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    &__description1 {
+        line-height: 40px;
+        font-size: 20px;
+        color: variaveis.$gradient4;
+    }
+
+    
+    &__description2 {
+        line-height: 40px;
+        font-size: 20px;
+        color: variaveis.$gradient3;
+
+    }
+
+    
+    &__description3 {
+        line-height: 40px;
+        font-size: 20px;
+        color: variaveis.$gradient1;
+    }
+
+    
+    &__description4 {
+        line-height: 40px;
+        font-size: 20px;
+        color: variaveis.$gradient1;
+    }
+
+    @media (max-width: 640px) {
+        .container{
+            display: block;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        &__image {
+            max-width: 340px;
+        }
+
+        &__description1 {
+            line-height: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: variaveis.$gradient4;
+        }
+
+        &__description2 {
+            line-height: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: variaveis.$gradient4;
+        }
+
+        &__description3 {
+            line-height: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: variaveis.$gradient4;
+        }
+
+        &__description4 {
+            line-height: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: variaveis.$gradient4;
+        }
+    }
+}
